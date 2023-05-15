@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npx lint-staged"
   },
   "dependencies": {
     "element-plus": "^2.3.4",
@@ -23,16 +24,12 @@
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.36",
     "scss": "^0.2.4",
-    "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.2",
     "unocss": "^0.51.12",
     "unplugin-auto-import": "^0.15.3",
     "vite": "^4.3.2",
     "vitest": "^0.31.0",
     "vue-tsc": "^1.4.2"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
